@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ivan Pozhidaev">
+	<meta name="copyright" content="Ivan Pozhidaev">
+	<meta name="description" content="Strong Password Generator">
+    <title>Генератор криптостойких паролей</title>
+
+</head>
+
+<body>
+	<!-- Content -->
+	<header class="py-4 bg-dark">
+	<div class="container px-1">
+
+        <h3 class="m-0 text-white">Генератор криптостойких паролей</h3><br>
+			
+			<p class="m-0 text-white">Количество символов в пароле</p>
+            <input type="range" value="12" min="12" max="36" class="slider"
+                oninput="this.nextElementSibling.value = this.value" id="slider">
+            <output class="m-0 text-white">12</output><br><br>
+
+        <h4 id="pwd_txt" class="m-0 text-white"></h4>
+
+        <button id="generate" class="action-btn">
+            Создать пароль
+        </button>
+
+        <button id="clipboard" class="clipboard">
+            Копировать в буфер обмена
+        </button>
+    </div>
+	</header>
+
+    <script src="script.js"></script>
+	<!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</body>
+
+</html> 
